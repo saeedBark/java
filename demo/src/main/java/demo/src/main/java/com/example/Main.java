@@ -1,12 +1,14 @@
 package demo.src.main.java.com.example;
 
+import demo.src.Carre;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        Carre p1 = new Carre(4);
+        System.out.println(p1.getLargeur());
+  p1.affiche();
 
-        Couple p1 = new Couple();
-// p2 est un clone de p1
-System.out.println(p1.v1);
     }
 }
 

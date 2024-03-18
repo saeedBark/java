@@ -1,0 +1,30 @@
+class Service extends Thread {
+    private Socket service;
+
+    public Service(Socket s) { service = s; }
+    public void run() {
+
+        try {
+            System.out.println("Je suis un service qui prend la main");
+
+            OutputStream os = service.getOutputStream();
+            PrintWriter pw = new PrintWriter(os);
+
+            try {
+             Thread.sleep(60000);
+
+            } catch(Exception ex) {
+            }
+
+            pw.println("Bonjour");
+            pw.flush();
+
+            System.out.println("Service: J'ai terminé mon boulot");
+            service.close();
+
+        } catch(Exception e) {
+            System.err.println(e);
+
+        }                                          }
+
+}
