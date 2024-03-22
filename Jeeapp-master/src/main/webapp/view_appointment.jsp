@@ -44,7 +44,7 @@
     <div class="col-md-9">
       <div class="card paint-card">
         <div class="card-body">
-          <p class="fs-4 fw-bold text-center text-success">Appointment
+          <p class="fs-4 fw-bold text-center text-primary">Appointment
             List</p>
           <table class="table">
             <thead>

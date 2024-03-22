@@ -32,7 +32,7 @@
             <div class="card paint-card">
                 <p class="text-center fs-3">Change Password</p>
                 <c:if test="${not empty succMsg }">
-                    <p class="text-center text-success fs-3">${succMsg}</p>
+                    <p class="text-center text-primary fs-3">${succMsg}</p>
                     <c:remove var="succMsg" scope="session" />
                 </c:if>
 
@@ -52,7 +52,7 @@
                                                                      name="oldPassword" class="form-control" required>
                         </div>
                         <input type="hidden" value="${doctObj.id }" name="uid">
-                        <button class="btn btn-success col-md-12">Change
+                        <button class="btn btn-primary col-md-12">Change
                             Password</button>
                     </form>
                 </div>
@@ -63,7 +63,7 @@
             <div class="card paint-card">
                 <p class="text-center fs-3">Edit Profile</p>
                 <c:if test="${not empty succMsgd }">
-                    <p class="text-center text-success fs-3">${succMsgd}</p>
+                    <p class="text-center text-primary fs-3">${succMsgd}</p>
                     <c:remove var="succMsgd" scope="session" />
                 </c:if>
 

@@ -1,3 +1,3 @@
-<div class="container-fluid p-1 bg-success text-center text-white">
-  <p>@copyright G5hopital.mr</p>
+<div class="container-fluid p-1 bg-primary text-center text-white">
+  <p>@copyright Saeed</p>
 </div>

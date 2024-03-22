@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <p class="fs-4 text-center">Admin Login</p>
                     <c:if test="${not empty succMsg }">
-                        <p class="text-center text-success fs-3">${succMsg}</p>
+                        <p class="text-center text-primary fs-3">${succMsg}</p>
                         <c:remove var="succMsg" scope="session" />
                     </c:if>
 
@@ -44,7 +44,7 @@
                                                                               name="password" type="password" class="form-control">
                         </div>
 
-                        <button type="submit" class="btn bg-success text-white col-md-12">Login</button>
+                        <button type="submit" class="btn bg-primary text-white col-md-12">Login</button>
                     </form>
                 </div>
             </div>

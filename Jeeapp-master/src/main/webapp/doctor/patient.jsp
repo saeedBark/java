@@ -38,7 +38,7 @@
                         <c:remove var="errorMsg" scope="session" />
                     </c:if>
                     <c:if test="${not empty succMsg}">
-                        <p class=" fs-4 text-center text-success">${succMsg}</p>
+                        <p class=" fs-4 text-center text-primary">${succMsg}</p>
                         <c:remove var="succMsg" scope="session" />
                     </c:if>
 
@@ -77,11 +77,11 @@
                                     if ("Pending".equals(ap.getStatus())) {
                                 %>
                                 <a href="comment.jsp?id=<%=ap.getId()%>"
-                                   class="btn btn-success btn-sm">Comment</a>
+                                   class="btn btn-primary btn-sm">Comment</a>
                                 <%
                                 } else {
                                 %>
-                                <a href="#" class="btn btn-success btn-sm disabled">Comment</a>
+                                <a href="#" class="btn btn-primary btn-sm disabled">Comment</a>
                                 <%
                                     }
                                 %>

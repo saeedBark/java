@@ -53,7 +53,7 @@
             <c:remove var="errorMsg" scope="session" />
           </c:if>
           <c:if test="${not empty succMsg}">
-            <p class=" fs-4 text-center text-success">${succMsg}</p>
+            <p class=" fs-4 text-center text-primary">${succMsg}</p>
             <c:remove var="succMsg" scope="session" />
           </c:if>
           <form class="row g-3" action="appAppointment" method="post">
@@ -130,11 +130,11 @@
             </div>
 
             <c:if test="${empty userObj }">
-              <a href="user_login.jsp" class="col-md-6 offset-md-3 btn btn-success">Submit</a>
+              <a href="user_login.jsp" class="col-md-6 offset-md-3 btn btn-primary">Submit</a>
             </c:if>
 
             <c:if test="${not empty userObj }">
-              <button class="col-md-6 offset-md-3 btn btn-success">Submit</button>
+              <button class="col-md-6 offset-md-3 btn btn-primary">Submit</button>
             </c:if>
           </form>
         </div>

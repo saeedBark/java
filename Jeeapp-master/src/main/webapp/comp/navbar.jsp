@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page isELIgnored="false" %>
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.jsp"><i class="fa-solid fa-stethoscope"></i>HOSPITAL HOME</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,7 +39,7 @@
             <a class="nav-link active" aria-current="page" href="view_appointment.jsp">VIEW APPOINTMENT</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="btn btn-success dropdown-toggle" type="button"
+            <a class="btn btn-primary dropdown-toggle" type="button"
                id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                aria-expanded="false">
               <i class="fa-solid fa-user"></i>${userObj.fullname}

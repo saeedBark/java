@@ -29,7 +29,7 @@
                            <label class="form-label">Password</label>
                            <input required name="password" type="password" class="form-control">
                        </div>
-                      <button type="submit" class="btn bg-success text-white col-md-12">Login</button>
+                      <button type="submit" class="btn bg-primary text-white col-md-12">Login</button>
                   </form>
                 </div>
             </div>
