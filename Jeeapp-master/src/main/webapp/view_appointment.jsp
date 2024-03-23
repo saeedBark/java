@@ -55,7 +55,9 @@
               <th scope="col">Appoint Date</th>
               <th scope="col">Diseases</th>
               <th scope="col">Doctor Name</th>
-              <th scope="col">Status</th>
+              <th scope="col">Status</th>             
+               <th scope="col">Edit</th>             
+              
 
             </tr>
             </thead>
@@ -83,6 +85,10 @@
               %> <%=ap.getStatus()%> <%
                 }
               %>
+              </td>
+               <td><a href="edit_appointment.jsp?id=<%=d.getId()%>"
+                     class="btn btn-sm btn-primary">Edit</a>
+
               </td>
             </tr>
             <%
