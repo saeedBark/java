@@ -66,10 +66,11 @@
                      int id=Integer.parseInt(request.getParameter("id"));
                     AppointmentDAO daoo=new AppointmentDAO(DbConn.getConn());
                     Appointment ap=daoo.getAppointmentById(id);
+                    System.out.print(ap.getAge());
 
          %>
          
-          <form class="row g-3" action="edit_appointment.jsp" method="post">
+          <form class="row g-3" action="editAppointment" method="post">
 
             <input type="hidden" name="userid" value="${userObj.id }">
 
@@ -80,7 +81,7 @@
 
             <div class="col-md-6">
               <label>Gender</label> <select class="form-control" name="gender" 
-                                            required value= "<%=ap.getGender() %>"> 
+                                            required value="<%=ap.getGender() %>"> 
               <option value="male">Male</option>
               <option value="female">Female</option>
             </select>
@@ -88,7 +89,7 @@
 
             <div class="col-md-6">
               <%--@declare id="inputemail4"--%><label for="inputEmail4" class="form-label">Age</label> <input
-                    required type="number" class="form-control" name="age" value =" <%=ap.getAge() %>">
+                    required type="number" class="form-control" name="age" value="<%=ap.getAge() %>">
             </div>
 
             <div class="col-md-6">
@@ -99,7 +100,7 @@
 
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label> <input
-                    required type="email" class="form-control" name="email" value= "<%= ap.getEmail() %>">
+                    required type="email" class="form-control" name="email" value= "<%=ap.getEmail() %>">
             </div>
 
             <div class="col-md-6">
@@ -117,7 +118,7 @@
             <div class="col-md-6">
               <%--@declare id="inputpassword4"--%><label for="inputPassword4" class="form-label">Doctor</label> <select
                     required class="form-control" name="doct">
-              <option value="<%= ap.getDoctorId()  %>">--select--</option>
+              <option value="<%=ap.getDoctorId()  %>">--select--</option>
 
               <%
                 DoctorDao dao = new DoctorDao(DbConn.getConn());
@@ -138,7 +139,7 @@
 
             <div class="col-md-12">
               <label>Full Address</label>
-              <textarea required name="address" class="form-control" rows="3"
+              <textarea required name="address" class="form-control" rows="3"  value="<%=ap.getAddress() %>"
                         cols="" ></textarea>
             </div>
 

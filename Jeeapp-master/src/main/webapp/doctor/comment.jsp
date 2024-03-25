@@ -47,7 +47,6 @@
           <%
             int id = Integer.parseInt(request.getParameter("id"));
             AppointmentDAO dao = new AppointmentDAO(DbConn.getConn());
-
             Appointment ap = dao.getAppointmentById(id);
           %>
           <form class="row" action="../updateStatus" method="post">

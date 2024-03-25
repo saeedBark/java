@@ -86,7 +86,7 @@
                 }
               %>
               </td>
-               <td><a href="edit_appointment.jsp?id=<%=d.getId()%>"
+               <td><a href="edit_appointment.jsp?id=<%=ap.getId()%>"
                      class="btn btn-sm btn-primary">Edit</a>
 
               </td>

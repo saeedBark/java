@@ -34,8 +34,27 @@ public class Appointment {
         this.address = address;
         this.status = status;
     }
+    
+    public Appointment(int id,int userId, String fullName, String gender, String age, String appoinDate, String email,
+            String phNo, String diseases, int doctorId, String address, String status) {
+super();
+this.id = id;
+this.userId = userId;
+this.fullName = fullName;
+this.gender = gender;
+this.age = age;
+this.appoinDate = appoinDate;
+this.email = email;
+this.phNo = phNo;
+this.diseases = diseases;
+this.doctorId = doctorId;
+this.address = address;
+this.status = status;
+}
 
-    public int getId() {
+   
+
+	public int getId() {
         return id;
     }
 
