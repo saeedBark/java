@@ -16,14 +16,11 @@ import java.io.IOException;
 public class UserLogin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // recup des para
         String email=req.getParameter("email");
         String password=req.getParameter("password");
 
         HttpSession session=req.getSession();
-       //recup conn bd
         UserDao usd=new UserDao(DbConn.getConn());
-        // recup login
         User user= usd.login(email,password);
 
         if(user!=null)

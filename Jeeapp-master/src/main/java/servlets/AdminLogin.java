@@ -16,7 +16,6 @@ public class AdminLogin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
          try{
-             // recup des para
              String email=req.getParameter("email");
              String password=req.getParameter("password");
 
